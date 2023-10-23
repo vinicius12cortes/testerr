@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Calculadora de Combustível</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="bomba.png" class="bomba" />
+
+      <h1>Calculadora de Combustível</h1>
+      <p>Insira os preços por litro do Etanol e da Gasolina:</p>
+      <label for="precoEtanol">Preço do Etanol:</label><br />
+      <input type="number" id="precoEtanol" step="0.01" /><br /><br />
+      <label for="precoGasolina">Preço da Gasolina:</label><br />
+      <input type="number" id="precoGasolina" step="0.01" /><br /><br />
+      <button class="button" onclick="calcular()">Calcular</button>
+      <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
